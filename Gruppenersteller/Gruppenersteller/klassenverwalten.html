@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: #262626;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: yellow;
+        }
+
+        button, a{
+            text-decoration: none;
+            border-radius: 20px;
+            text-align: center;
+            background-color: white;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #262626;
+        }
+    </style>
+</head>
+<body>
+    <script src="main.js"></script>
+    <h1>Bitte Klassennamen eingeben</h1>
+    <input type="text" id="klassenname">
+    <br>
+    <br>
+    <button onclick="NamenHinzufügen()">Kindernamen eintragen</button>
+    <br>
+    <br>
+    <textarea id="kinder"></textarea>
+    <br>
+    <br>
+    <button onclick="speichern()">fertig</button>
+    <br>
+    <br>
+    <button onclick="localStorage.removeItem(document.getElementById('klassenname').value)">Alle Kinder aus der Klasse löschen</button>
+    <br>
+    <br>
+    <a href="index.html">zurück</a>
+</body>
+</html>
